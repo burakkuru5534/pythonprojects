@@ -1,0 +1,40 @@
+#     ######################### String fonkları #########################     #
+
+soz="Tanrı Türk'ü Korusun.!"
+soz2="Tanrı"
+soz3="Tanrı "
+soz4="Tanrı1"
+print(soz*5)
+print(soz[0:])
+print(soz[::-1])
+print(soz[0:10])
+print(soz[:-1])
+print("upper fonk:",soz.upper())
+print("upper and after that lower fonk:",soz.upper().lower())
+print("soz stringinin içerdiği karakter sayısı:",len(soz))
+print("soz dizisi içindeki t sayisi:",soz.count("t"))
+print("soz dizisindeki T'nin indisi:",soz.index("T"))
+print("soz dizisindeki a'nin indisi:",soz.index("a"))
+print("soz dizisi başlangıç değeri T ise true değilse false:",soz.startswith("T"))
+print("soz dizisi başlangıç değeri T değil ise false:",soz.startswith("a"))
+print("soz dizisi içinde Türk kaçıncı indiste:",soz.index("Türk"))
+print("Türk'ün indisini ararken 4er 4er indisleme yapar.")
+print("Tanr:indisi 0'dır. anrı: indisi 1'dir gibi.")
+print("soz.index('Tanr'):",soz.index("Tanr"))
+print("soz.find('Türk'):",soz.find("Türk"))
+print("Olmayan değer arasaydık mesela:","soz.find('aa'):",soz.find("aa"))
+print("eger .index() ile olmayan değer arasaydık hata basacaktı.")
+print(".index() ile .find() arasındaki fark budur.")
+print(".replace() fonk kullanımı:","soz.replace('a','A'):",soz.replace("a","A"))
+print("ilk parametredeki karakterle ikinci parametredeki karakteri değiştirir.")
+print("isdigit() fonk kullanımı:","soz.isdigit(): beklentimiz false döndürmesi. Çünkü tüm karakterleri sayısal değil. :",soz.isdigit())
+print("isalpha() fonk kullanımı:","soz.isalpha():",soz.isalpha())
+print("isalpha() for soz2:'Tanrı':",soz2.isalpha())
+print("isalpha() for soz3:'Tanrı ':",soz3.isalpha())
+print("boşluk dahi olsa isalpha false döndürüyor.")
+print("isalnum() fonk kullanımı:","soz.isalnum():",soz.isalnum())
+print("isalnum() for soz2:'Tanrı ':",soz2.isalnum())
+print("isalnum() for soz3:'Tanrı ':",soz3.isalnum())
+print("isalnum() for soz4:'Tanrı1':",soz4.isalnum())
+print("isalnum() tüm karakterler sayı ya da tüm karakterler harf de olsa true döndürüyor. her ikisini de içerince de true döndürüyor. Boşluk veya başka ascii karakterler içerirse false döndürüyor.")
+#     ######################### String fonkları #########################     #
